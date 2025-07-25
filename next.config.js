@@ -10,15 +10,7 @@ const nextConfig = {
   images: {
     unoptimized: true, // optional if you're using <Image>
 },
-}
-
+};
 module.exports = nextConfig
 
-module.exports = {
-  allowedDevOrigins: ['local-origin.dev', '*.local-origin.dev'],
-}
-
-typescript: {
-    ignoreBuildErrors: true
-}
 
