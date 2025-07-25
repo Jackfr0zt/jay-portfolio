@@ -51,4 +51,10 @@ const AnimatedText = ({ text, className = "" }) => {
   );
 };
 
+export async function getStaticProps() {
+  return {
+    props: {}, // no dynamic props yet
+  };
+}
+
 export default AnimatedText;

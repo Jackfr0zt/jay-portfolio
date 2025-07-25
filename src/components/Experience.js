@@ -73,5 +73,9 @@ const Experience = () => {
     </div>
   )
 }
-
+export async function getStaticProps() {
+  return {
+    props: {}, // no dynamic props yet
+  };
+}
 export default Experience

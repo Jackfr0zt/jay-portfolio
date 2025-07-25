@@ -25,5 +25,9 @@ const LiIcon = ({ reference }) => {
     </figure>
   )
 }
-
+export async function getStaticProps() {
+  return {
+    props: {}, // no dynamic props yet
+  };
+}
 export default LiIcon

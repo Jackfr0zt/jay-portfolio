@@ -462,3 +462,8 @@ export const LinkArrow = ({ className, ...rest }) => (
   </svg>
 );
 
+export async function getStaticProps() {
+  return {
+    props: {}, // no dynamic props yet
+  };
+}

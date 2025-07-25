@@ -186,4 +186,9 @@ const ArticlesPage = () => {
   );
 };
 
+export async function getStaticProps() {
+  return {
+    props: {}, // no dynamic props yet
+  };
+}
 export default ArticlesPage;
