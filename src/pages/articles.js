@@ -12,6 +12,7 @@ import article4 from '../../public/images/articles/smooth-scrolling-in-reactjs.p
 import article5 from '../../public/images/articles/create-modal-component-in-react-using-react-portals.png';
 import article6 from '../../public/images/articles/todo-list-app-built-using-react-redux-and-framer-motion.png';
 import article7 from '../../public/images/articles/What-is-Redux-with-easy-explanation.png';
+import TransitionEffect from '@/components/TransitionEffect';
 
 const FramerImage = motion(Image);
 
@@ -118,6 +119,7 @@ const ArticlesPage = () => {
         <title>Jay | Articles Page</title>
         <meta name="description" content="any description" />
       </Head>
+      <TransitionEffect />
       <main className="w-full flex flex-col items-center justify-center overflow-hidden dark:text-[#f5f5f5]">
         <Layout className="pt-16">
           <AnimatedText

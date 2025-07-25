@@ -9,6 +9,7 @@ import project1 from "../../public/images/projects/crypto-screener-cover-image.j
 import project2 from "../../public/images/projects/fashion-studio-website.jpg"
 import project3 from "../../public/images/projects/nft-collection-website-cover-image.jpg"
 import { motion } from "framer-motion"
+import TransitionEffect from '@/components/TransitionEffect'
 
 const FrameImage = motion(Image);
 
@@ -83,6 +84,7 @@ const project = () => {
         <title>Jay | Project Page</title>
         <meta name="description" content="any description" />
       </Head>
+      <TransitionEffect />
       <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-[#f5f5f5]'>
         <Layout className='pt-16 px-4 sm:px-8'>
           <AnimatedText
@@ -96,7 +98,7 @@ const project = () => {
                 img={project1}
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                link="/"
+                link="https://crypto-bucks.netlify.app/"
                 github="/"
                 type="Featured Project"
               />
@@ -105,8 +107,8 @@ const project = () => {
               <Projects
                 title="Fashion Studio Website"
                 img={project2}
-                link="/"
-                github="/"
+                link="https://wibe-studio.netlify.app/"
+                github="https://wibe-studio.netlify.app/"
                 type="Project"
               />
             </div>
@@ -114,8 +116,8 @@ const project = () => {
               <Projects
                 title="NFT Collection Website"
                 img={project3}
-                link="/"
-                github="/"
+                link="https://the-weirdos.netlify.app/"
+                github="https://the-weirdos.netlify.app/"
                 type="Project"
               />
             </div>
