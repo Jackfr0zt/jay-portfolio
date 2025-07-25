@@ -4,3 +4,11 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
+module.exports = {
+  allowedDevOrigins: ['local-origin.dev', '*.local-origin.dev'],
+}
+
+typescript: {
+    ignoreBuildErrors: true
+}

@@ -1,3 +1,57 @@
+
+@tailwind utilities;
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@custom-variant dark (&:is(.dark *));
+
+
+
+@theme{
+
+    ----breakpoint-sm:480px;
+    ----breakpoint-md:768px;
+    ----breakpoint-lg:976px;
+}
+
+@theme {
+  --animate-spin-slow: spin 8s linear infinite;
+}
+
+@theme {
+  --colors-circularLight: repeating-radial-gradient(rgba(0,0,0,0.4)2px,#f5f5f5 5px,#f5f5f5 100px);
+}
+
+@theme{
+
+  --colors-white: #f5f5f5,
+  --colors-black: #1b1b1b,
+  --colors-primary: #B63E96, // 240,86,199
+  --colors-primaryDark: #58E6D9, // 80,230,217
+
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat-regular.woff') format('woff'),
+        url('/fonts/montserrat-regular.woff1') format('woff1');
+        
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat-italic.woff2') format('woff2'),
+       url('/fonts/montserrat-italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@theme {
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -8,7 +62,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-
+ 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
     #16abff33 0deg,
@@ -21,7 +75,6 @@
     rgba(255, 255, 255, 1),
     rgba(255, 255, 255, 0)
   );
-
   --tile-start-rgb: 239, 245, 249;
   --tile-end-rgb: 228, 232, 233;
   --tile-border: conic-gradient(
