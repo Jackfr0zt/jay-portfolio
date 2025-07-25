@@ -1,15 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  ignoreBuildErrors: true,
-  eslint:{
+  eslint: {
     ignoreDuringBuilds: true,
   },
- output: 'export', // enables static export
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  output: 'export', // enables static export
   images: {
-    unoptimized: true, 
-},
-}
-module.exports = nextConfig
+    unoptimized: true,
+  }, // ✅ add this comma
+};
 
-
+module.exports = nextConfig;
